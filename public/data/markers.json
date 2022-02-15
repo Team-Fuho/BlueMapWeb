@@ -40,6 +40,9 @@
           "position": { "x": 186, "y": 80, "z": -319 },
           "label": "A tree",
           "detail": "This is a tree.",
+          "image": "assets/images/2020-10-17_14.50.32.jpg",
+          "width": 240,
+          "height": 160,
           "shape": [
             { "x": -8, "z": 201},
             { "x": -8, "z": 185},
@@ -63,6 +66,9 @@
           "position": { "x": 165.0, "y": 65, "z": -276.0 },
           "label": "River",
           "detail": "A river ... <br><br><i>honestly i just needed a reason to use the line marker ;D</i>",
+          "image": "assets/images/2020-10-17_14.50.32.jpg",
+          "width": 240,
+          "height": 160,
           "line": [
             { "x": 84, "y": 64, "z": 59 },
             { "x": 15, "y": 67, "z": 12 },
@@ -85,6 +91,9 @@
           "position": { "x": 255.0, "y": 63.0, "z": 1797.0 },
           "label": "Island",
           "detail": "A cool Island you should visit!",
+          "image": "assets/images/2020-10-17_14.50.32.jpg",
+          "width": 240,
+          "height": 160,
           "shape": [
             { "x": 623.0, "z": -117.0 },
             { "x": 817.0, "z": -187.0 },

@@ -55,7 +55,7 @@ export class ObjectMarker extends Marker {
         if (event.data.doubleTap) return false;
 
         if (this.data.detail || this.data.label) {
-            let popup = new LabelPopup(this.data.detail || this.data.label);
+            let popup = new LabelPopup(this.data.detail || this.data.label, Object.fromEntries(Object.entries(this.data).filter(([x, _]) => ['image', 'width', 'height'].includes(x))));
             popup.position.copy(pos);
             this.add(popup);
             popup.open();
@@ -73,6 +73,9 @@ export class ObjectMarker extends Marker {
      *      position: {x: number, y: number, z: number},
      *      label: string,
      *      detail: string,
+     *      image: string,
+     *      width: number,
+     *      height: number,
      *      link: string,
      *      newTab: boolean
      *      }}
@@ -88,8 +91,13 @@ export class ObjectMarker extends Marker {
         // update label
         this.data.label = markerData.label || null;
 
-        //update detail
+        // update detail
         this.data.detail = markerData.detail || null;
+        
+        // update image
+        this.data.image = markerData.image || null;
+        this.data.width = markerData.width || null;
+        this.data.height = markerData.height || null;
 
         // update link
         this.data.link = markerData.link || null;
@@ -102,9 +110,10 @@ export class LabelPopup extends CSS2DObject {
 
     /**
      * @param label {string}
+     * @param img {{image: string, width: number, height: number}}
      */
-    constructor(label) {
-        super(htmlToElement(`<div class="bm-marker-labelpopup">${label}</div>`));
+    constructor(label, img) {
+        super(htmlToElement(`<div class="bm-marker-labelpopup">${img ? `<img src="${img.image}" width=${img.width || 200}" height="${img.height || 150}"/>` : ''}<p>${label}</p></div>`));
     }
 
     /**

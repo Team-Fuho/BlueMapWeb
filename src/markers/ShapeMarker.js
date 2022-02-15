@@ -130,7 +130,6 @@ export class ShapeMarker extends ObjectMarker {
         this.border.fadeDistanceMax = maxDist;
         this.fill.fadeDistanceMin = minDist;
         this.fill.fadeDistanceMax = maxDist;
-
         // save used marker data for next update
         this._markerData = markerData;
     }
