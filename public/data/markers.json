@@ -10,7 +10,6 @@
         {
           "id": "spawn",
           "type": "poi",
-          "map": "world",
           "position": { "x": 105.5, "y": 62.5, "z": 50.5 },
           "label": "<b>Spawnpoint</b>",
           "icon": "data/icons/LogoCircle32.png",
@@ -22,7 +21,6 @@
         {
           "id": "mthoru",
           "type": "poi",
-          "map": "world",
           "position": { "x": -596, "y": 100, "z": 26 },
           "label": "Mt. Horu",
           "image": "assets/images/2020-10-17_14.50.32.jpg",
@@ -36,7 +34,6 @@
         {
           "id": "a-tree",
           "type": "extrude",
-          "map": "world",
           "position": { "x": 186, "y": 80, "z": -319 },
           "label": "A tree",
           "detail": "This is a tree.",
@@ -62,7 +59,6 @@
         {
           "id": "river",
           "type": "line",
-          "map": "world",
           "position": { "x": 165.0, "y": 65, "z": -276.0 },
           "label": "River",
           "detail": "A river ... <br><br><i>honestly i just needed a reason to use the line marker ;D</i>",
@@ -87,7 +83,6 @@
         {
           "id": "town",
           "type": "shape",
-          "map": "world",
           "position": { "x": 255.0, "y": 63.0, "z": 1797.0 },
           "label": "Island",
           "detail": "A cool Island you should visit!",
