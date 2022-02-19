@@ -113,7 +113,7 @@ export class PoiMarker extends HtmlMarker {
         // update label
         if (this.data.label !== markerData.label){
             this.data.label = markerData.label || "";
-            this.labelElement.innerHTML = markerData.image ? `<div><img src="${markerData.image}" width="${this.data.width || 200}" height="${this.data.height || 150}"/>${this.data.label}</div>` : this.data.label
+            this.labelElement.innerHTML = markerData.image ? `<div><img style="border-radius: 4px" src="${markerData.image}" width="${this.data.width || 200}" height="${this.data.height || 150}"/>${this.data.label}</div>` : this.data.label
         }
 
         // update icon

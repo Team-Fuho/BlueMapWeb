@@ -113,7 +113,7 @@ export class LabelPopup extends CSS2DObject {
      * @param img {{image: string, width: number, height: number}}
      */
     constructor(label, img) {
-        super(htmlToElement(`<div class="bm-marker-labelpopup">${img ? `<img src="${img.image}" width=${img.width || 200}" height="${img.height || 150}"/>` : ''}<p>${label}</p></div>`));
+        super(htmlToElement(`<div class="bm-marker-labelpopup">${img ? `<img style="border-radius: 4px" src="${img.image}" width=${img.width || 200}" height="${img.height || 150}"/>` : ''}<p>${label}</p></div>`));
     }
 
     /**
